@@ -8,6 +8,8 @@ const initialState = {
 
 const ai = (state = initialState, action) => {
 
+    console.log(action);
+
     if(action.type === 'INIT_GAME') {
         return {
             ...state,

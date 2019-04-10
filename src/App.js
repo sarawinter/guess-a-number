@@ -32,7 +32,7 @@ class App extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        this.props.actions.guess(this.state.number)
+        this.props.actions.guess(this.state.number);
     }
 
     render() {
@@ -41,6 +41,7 @@ class App extends Component {
 
         return (
             <div className="App">
+                <h1>REDUX</h1>
                 <p>Latest guess: {this.props.guessedNumber}</p>
                 <form onSubmit={this.onSubmit}>
                     <input type="text" name="number" value={this.state.number} onChange={this.handleInputChange} />

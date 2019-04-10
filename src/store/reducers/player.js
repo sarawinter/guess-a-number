@@ -1,10 +1,12 @@
 
 const initialState = {
-    sum: 0,
+    guessedNumber: 0,
     history: []
 }
 
 const player = (state = initialState, action) => {
+
+    console.log(action);
 
     if(action.type === 'GUESS') {
         return {
